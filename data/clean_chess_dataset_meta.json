@@ -1,7 +1,7 @@
 {
   "target_col": "target",
   "n_rows": 119868,
-  "n_cols": 30,
+  "n_cols": 31,
   "feature_names": [
     "white_rating",
     "black_rating",
@@ -32,7 +32,8 @@
     "captures_in_first_15_moves",
     "checks_in_first_15_moves",
     "plies_processed",
+    "moves_first15_san",
     "target"
   ],
-  "notes": "Features include pre-game ratings/date/rated + board/state features from first 15 moves (ply=30). No ECO/opening raw text or post-game fields included."
+  "notes": "Includes pre-game ratings/date/rated + engineered board/state features from first 15 moves (ply=30). Also includes 'moves_first15_san' for sequence models/interpretability. No ECO/opening/raw PGN, and no post-game fields."
 }
