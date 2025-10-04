@@ -1,0 +1,12 @@
+{
+  "label_to_id": {
+    "black": 0,
+    "draw": 1,
+    "white": 2
+  },
+  "id_to_label": {
+    "0": "black",
+    "1": "draw",
+    "2": "white"
+  }
+}

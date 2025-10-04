@@ -1,0 +1,122 @@
+{
+  "config": {
+    "cutoff_full_moves": 20,
+    "cutoff_plies": 40,
+    "vocab_size": 4419,
+    "embedding_dim": 128,
+    "class_order": [
+      "black",
+      "draw",
+      "white"
+    ],
+    "epochs": 30,
+    "batch_size": 512
+  },
+  "class_weight": {
+    "0": 0.7208725041070511,
+    "1": 8.601727115716754,
+    "2": 0.6682095970268402
+  },
+  "train": {
+    "acc": 0.47929885149787166,
+    "f1_macro": 0.42001619559037895,
+    "confusion_matrix": [
+      [
+        20288,
+        13309,
+        12462
+      ],
+      [
+        226,
+        3105,
+        529
+      ],
+      [
+        12752,
+        12588,
+        24349
+      ]
+    ]
+  },
+  "val": {
+    "acc": 0.4259684294346339,
+    "f1_macro": 0.3588576941152157,
+    "confusion_matrix": [
+      [
+        3964,
+        3074,
+        2834
+      ],
+      [
+        241,
+        328,
+        258
+      ],
+      [
+        2881,
+        2967,
+        4802
+      ]
+    ]
+  },
+  "test": {
+    "acc": 0.42869858521502857,
+    "f1_macro": 0.3614304562696346,
+    "report": {
+      "black": {
+        "precision": 0.5626587637595258,
+        "recall": 0.40395136778115504,
+        "f1-score": 0.470276008492569,
+        "support": 9870.0
+      },
+      "draw": {
+        "precision": 0.05311268715524035,
+        "recall": 0.407496977025393,
+        "f1-score": 0.0939765755716676,
+        "support": 827.0
+      },
+      "white": {
+        "precision": 0.6098547062539482,
+        "recall": 0.45328199830970045,
+        "f1-score": 0.5200387847446671,
+        "support": 10649.0
+      },
+      "accuracy": 0.42869858521502857,
+      "macro avg": {
+        "precision": 0.4085420523895715,
+        "recall": 0.42157678103874946,
+        "f1-score": 0.3614304562696346,
+        "support": 21346.0
+      },
+      "weighted avg": {
+        "precision": 0.5664625202605733,
+        "recall": 0.42869858521502857,
+        "f1-score": 0.48052262018951497,
+        "support": 21346.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        3987,
+        3069,
+        2814
+      ],
+      [
+        216,
+        337,
+        274
+      ],
+      [
+        2883,
+        2939,
+        4827
+      ]
+    ]
+  },
+  "artifacts": {
+    "best_model": "E:\\Github Projects\\chess-outcome-prediction\\results\\best_seq_model.keras",
+    "vocab": "E:\\Github Projects\\chess-outcome-prediction\\results\\vocab.json",
+    "label_mapping": "E:\\Github Projects\\chess-outcome-prediction\\results\\label_mapping.json",
+    "class_weights": "E:\\Github Projects\\chess-outcome-prediction\\results\\class_weights.json"
+  }
+}
