@@ -1,6 +1,6 @@
 {
   "target_col": "target",
-  "n_rows": 119868,
+  "n_rows": 142328,
   "n_cols": 31,
   "feature_names": [
     "white_rating",
