@@ -8,7 +8,9 @@
     "cutoff_reached",
     "captures_in_first_30_moves",
     "checks_in_first_30_moves",
-    "target"
+    "target",
+    "elo_diff",
+    "elo_avg"
   ],
   "move_col": "moves_first30_san",
   "captures_col": "captures_in_first_30_moves",
