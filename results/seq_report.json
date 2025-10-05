@@ -1,122 +1,96 @@
 {
   "config": {
-    "cutoff_full_moves": 20,
-    "cutoff_plies": 40,
-    "vocab_size": 4419,
+    "cutoff_full_moves": 30,
+    "cutoff_plies": 60,
+    "vocab_size": 6809,
     "embedding_dim": 128,
-    "class_order": [
-      "black",
-      "draw",
-      "white"
-    ],
-    "epochs": 30,
-    "batch_size": 512
-  },
-  "class_weight": {
-    "0": 0.7208725041070511,
-    "1": 8.601727115716754,
-    "2": 0.6682095970268402
-  },
-  "train": {
-    "acc": 0.47929885149787166,
-    "f1_macro": 0.42001619559037895,
-    "confusion_matrix": [
-      [
-        20288,
-        13309,
-        12462
-      ],
-      [
-        226,
-        3105,
-        529
-      ],
-      [
-        12752,
-        12588,
-        24349
-      ]
-    ]
+    "dropout": {
+      "after_lstm": 0.2,
+      "after_dense": 0.15
+    },
+    "optimizer": "AdamW",
+    "clipnorm": 1.0,
+    "epochs": 40,
+    "batch_size": 512,
+    "balanced_oversample_draws": 6
   },
   "val": {
-    "acc": 0.4259684294346339,
-    "f1_macro": 0.3588576941152157,
+    "acc": 0.5933767389573282,
+    "f1_macro": 0.4608460164470587,
     "confusion_matrix": [
       [
-        3964,
-        3074,
-        2834
+        5721,
+        1014,
+        3137
       ],
       [
-        241,
-        328,
-        258
+        336,
+        193,
+        298
       ],
       [
-        2881,
-        2967,
-        4802
+        2812,
+        1084,
+        6754
       ]
     ]
   },
   "test": {
-    "acc": 0.42869858521502857,
-    "f1_macro": 0.3614304562696346,
+    "acc": 0.5901808301321091,
+    "f1_macro": 0.45906773511412996,
     "report": {
       "black": {
-        "precision": 0.5626587637595258,
-        "recall": 0.40395136778115504,
-        "f1-score": 0.470276008492569,
+        "precision": 0.6444393956605703,
+        "recall": 0.5747720364741641,
+        "f1-score": 0.6076152733893857,
         "support": 9870.0
       },
       "draw": {
-        "precision": 0.05311268715524035,
-        "recall": 0.407496977025393,
-        "f1-score": 0.0939765755716676,
+        "precision": 0.08361629881154499,
+        "recall": 0.23821039903264812,
+        "f1-score": 0.12378259503612944,
         "support": 827.0
       },
       "white": {
-        "precision": 0.6098547062539482,
-        "recall": 0.45328199830970045,
-        "f1-score": 0.5200387847446671,
+        "precision": 0.6604495926180426,
+        "recall": 0.6317964128087145,
+        "f1-score": 0.6458053369168747,
         "support": 10649.0
       },
-      "accuracy": 0.42869858521502857,
+      "accuracy": 0.5901808301321091,
       "macro avg": {
-        "precision": 0.4085420523895715,
-        "recall": 0.42157678103874946,
-        "f1-score": 0.3614304562696346,
+        "precision": 0.46283509569671927,
+        "recall": 0.4815929494385089,
+        "f1-score": 0.45906773511412996,
         "support": 21346.0
       },
       "weighted avg": {
-        "precision": 0.5664625202605733,
-        "recall": 0.42869858521502857,
-        "f1-score": 0.48052262018951497,
+        "precision": 0.6306987363476301,
+        "recall": 0.5901808301321091,
+        "f1-score": 0.6079224204664065,
         "support": 21346.0
       }
     },
     "confusion_matrix": [
       [
-        3987,
-        3069,
-        2814
+        5673,
+        1059,
+        3138
       ],
       [
-        216,
-        337,
-        274
+        309,
+        197,
+        321
       ],
       [
-        2883,
-        2939,
-        4827
+        2821,
+        1100,
+        6728
       ]
     ]
   },
   "artifacts": {
     "best_model": "E:\\Github Projects\\chess-outcome-prediction\\results\\best_seq_model.keras",
-    "vocab": "E:\\Github Projects\\chess-outcome-prediction\\results\\vocab.json",
-    "label_mapping": "E:\\Github Projects\\chess-outcome-prediction\\results\\label_mapping.json",
-    "class_weights": "E:\\Github Projects\\chess-outcome-prediction\\results\\class_weights.json"
+    "vocab": "E:\\Github Projects\\chess-outcome-prediction\\results\\vocab.json"
   }
 }

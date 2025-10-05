@@ -1,6 +1,6 @@
 {
-  "cutoff_full_moves": 20,
-  "cutoff_plies": 40,
+  "cutoff_full_moves": 30,
+  "cutoff_plies": 60,
   "pad_id": 0,
   "unk_id": 1
 }

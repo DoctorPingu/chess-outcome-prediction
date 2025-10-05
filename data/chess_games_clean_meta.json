@@ -1,18 +1,18 @@
 {
-  "cutoff_full_moves": 20,
-  "cutoff_plies": 40,
+  "cutoff_full_moves": 30,
+  "cutoff_plies": 60,
   "rows": 142303,
   "columns": [
-    "moves_first20_san",
+    "moves_first30_san",
     "plies_processed",
     "cutoff_reached",
-    "captures_in_first_20_moves",
-    "checks_in_first_20_moves",
+    "captures_in_first_30_moves",
+    "checks_in_first_30_moves",
     "target"
   ],
-  "move_col": "moves_first20_san",
-  "captures_col": "captures_in_first_20_moves",
-  "checks_col": "checks_in_first_20_moves",
+  "move_col": "moves_first30_san",
+  "captures_col": "captures_in_first_30_moves",
+  "checks_col": "checks_in_first_30_moves",
   "class_distribution": {
     "white": 70988,
     "black": 65801,
