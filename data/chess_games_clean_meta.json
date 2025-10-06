@@ -9,6 +9,8 @@
     "captures_in_first_30_moves",
     "checks_in_first_30_moves",
     "target",
+    "white_elo",
+    "black_elo",
     "elo_diff",
     "elo_avg"
   ],
