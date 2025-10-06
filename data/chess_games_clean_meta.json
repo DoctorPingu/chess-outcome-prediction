@@ -20,5 +20,12 @@
   "class_distribution": {
     "white": 42008,
     "black": 41936
-  }
+  },
+  "boards_npz": "E:\\Github Projects\\chess-outcome-prediction\\data\\chess_boards_8x8xC.npz",
+  "board_channels": 36,
+  "board_checkpoints": [
+    20,
+    40,
+    60
+  ]
 }
