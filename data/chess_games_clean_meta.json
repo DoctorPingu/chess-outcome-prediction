@@ -1,7 +1,7 @@
 {
   "cutoff_full_moves": 30,
   "cutoff_plies": 60,
-  "rows": 142303,
+  "rows": 89061,
   "columns": [
     "moves_first30_san",
     "plies_processed",
@@ -16,8 +16,8 @@
   "captures_col": "captures_in_first_30_moves",
   "checks_col": "checks_in_first_30_moves",
   "class_distribution": {
-    "white": 70988,
-    "black": 65801,
-    "draw": 5514
+    "white": 42008,
+    "black": 41936,
+    "draw": 5117
   }
 }
