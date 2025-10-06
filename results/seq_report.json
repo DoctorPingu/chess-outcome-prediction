@@ -1,100 +1,30 @@
 {
-  "config": {
-    "cutoff_full_moves": 30,
-    "cutoff_plies": 60,
-    "vocab_size": 6207,
-    "embedding_dim": 128,
-    "dropout": {
-      "after_lstm": 0.2,
-      "after_concat": 0.15
-    },
-    "optimizer": "AdamW",
-    "clipnorm": 1.0,
-    "epochs": 40,
-    "batch_size": 512,
-    "balanced_oversample_draws": 6,
-    "elo_features": [
-      "elo_diff",
-      "elo_avg"
-    ]
-  },
   "val": {
-    "acc": 0.4746295464750786,
-    "f1_macro": 0.3929974438041415,
-    "confusion_matrix": [
+    "acc": 0.6022709226615849,
+    "f1_macro": 0.5997014799503944,
+    "cm": [
       [
-        2788,
-        1240,
-        2264
+        3288,
+        3004
       ],
       [
-        256,
-        225,
-        287
-      ],
-      [
-        1879,
-        1094,
-        3329
+        2005,
+        4297
       ]
     ]
   },
   "test": {
-    "acc": 0.4695359281437126,
-    "f1_macro": 0.38582520740266907,
-    "report": {
-      "black": {
-        "precision": 0.5684449958643507,
-        "recall": 0.4369734541408361,
-        "f1-score": 0.4941134178125281,
-        "support": 6291.0
-      },
-      "draw": {
-        "precision": 0.07616521409624857,
-        "recall": 0.2620599739243807,
-        "f1-score": 0.11802701115678214,
-        "support": 767.0
-      },
-      "white": {
-        "precision": 0.5646559048428207,
-        "recall": 0.5272929228816249,
-        "f1-score": 0.545335193238697,
-        "support": 6302.0
-      },
-      "accuracy": 0.4695359281437126,
-      "macro avg": {
-        "precision": 0.40308870493447335,
-        "recall": 0.40877545031561385,
-        "f1-score": 0.38582520740266907,
-        "support": 13360.0
-      },
-      "weighted avg": {
-        "precision": 0.53839578596661,
-        "recall": 0.4695359281437126,
-        "f1-score": 0.49668387850345314,
-        "support": 13360.0
-      }
-    },
-    "confusion_matrix": [
+    "acc": 0.5928367217280813,
+    "f1_macro": 0.5905403347127719,
+    "cm": [
       [
-        2749,
-        1286,
-        2256
+        3261,
+        3030
       ],
       [
-        260,
-        201,
-        306
-      ],
-      [
-        1827,
-        1152,
-        3323
+        2097,
+        4204
       ]
     ]
-  },
-  "artifacts": {
-    "best_model": "E:\\Github Projects\\chess-outcome-prediction\\results\\best_seq_model.keras",
-    "vocab": "E:\\Github Projects\\chess-outcome-prediction\\results\\vocab.json"
   }
 }
