@@ -1,7 +1,7 @@
 {
   "cutoff_full_moves": 30,
   "cutoff_plies": 60,
-  "rows": 265022,
+  "rows": 83944,
   "columns": [
     "moves_first30_san",
     "plies_processed",
@@ -18,8 +18,8 @@
   "captures_col": "captures_in_first_30_moves",
   "checks_col": "checks_in_first_30_moves",
   "class_distribution": {
-    "black": 132587,
-    "white": 132435
+    "white": 42008,
+    "black": 41936
   },
   "boards_npz": "E:\\Github Projects\\chess-outcome-prediction\\data\\chess_boards_8x8xC.npz",
   "board_channels": 36,
